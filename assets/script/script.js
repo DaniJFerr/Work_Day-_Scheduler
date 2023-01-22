@@ -23,7 +23,17 @@ $(document).ready(function() {
     localStorage.setItem(time, event);
   });
 
-  // Retrieve and display saved events when page is refreshed
+  // Retrieve and display saved events when page is refreshed 
+  //Repeat the above line of code for each hour from 9am to 5pm
     $("#9am").val(localStorage.getItem("9am"));
+    $("#10am").val(localStorage.getItem("10am"));
+    $("#11am").val(localStorage.getItem("11am"));
+    $("#12am").val(localStorage.getItem("12am"));
+    $("#13pm").val(localStorage.getItem("13pm"));
+    $("#14pm").val(localStorage.getItem("14pm"));
+    $("#15pm").val(localStorage.getItem("15pm"));
+    $("#16pm").val(localStorage.getItem("16pm"));
+    $("#17pm").val(localStorage.getItem("17pm"));
+
   });
 
