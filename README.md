@@ -1,5 +1,6 @@
 # Work_Day_Scheduler
-An Simple calendar application that allows a user to save events for each hour of the day
+An Simple calendar application that allows a user to save events for each hour of the day.
+
 
 # About
 
@@ -20,7 +21,7 @@ Follow the links below to learn more about the functionalities of this project:
 
 
 
-The app should:
+## The app should:
 
 * Display the current day at the top of the calender when a user opens the planner.
  
@@ -39,4 +40,5 @@ The following animation demonstrates the application functionality:
 ![05-third-party-apis-homework-demo](https://user-images.githubusercontent.com/117309987/213917382-a4bbdc40-bbd4-43d5-be59-888204acf65a.gif)
 
 
+## Project live URL: https://danijferr.github.io/Work_Day_Scheduler/
 
