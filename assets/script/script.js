@@ -4,9 +4,9 @@ $(document).ready(function() {
 
 //color-code each timeblock based on past, present and future 
 
-  var currentHour = moment().hours();
+ let currentHour = moment().hours();
   $(".description").each(function(){
-    var bloclHour = parseInt($(this).attr("id").split("am"));
+   let bloclHour = parseInt($(this).attr("id").split("am"));
     if (bloclHour < currentHour){
       $(this).addClass("past");
     }else if (bloclHour === currentHour){
@@ -14,11 +14,16 @@ $(document).ready(function() {
     }else{
       $(this).addClass("future");
     }
-    console.log(this);
-
   });
 
-  
+//save event when the button is clicked 
+  $(".saveBtn").on("click" , function(){
+    let event = $(this).prev().val();
+    let time = $(this).attr("id").split("-")[0];
+    localStorage.setItem(time, event);
+  });
 
+  // Retrieve and display saved events when page is refreshed
+    $("#9am").val(localStorage.getItem("9am"));
   });
 
