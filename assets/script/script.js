@@ -34,6 +34,5 @@ $(document).ready(function() {
     $("#15pm").val(localStorage.getItem("15pm"));
     $("#16pm").val(localStorage.getItem("16pm"));
     $("#17pm").val(localStorage.getItem("17pm"));
-
   });
 
